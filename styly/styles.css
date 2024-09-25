@@ -1,0 +1,60 @@
+body {
+    background-color: blueviolet;
+      
+}
+h1 {
+    border: solid 15px;
+    text-align: center;
+    border-color: aqua;
+    color: rgb(255, 0, 221);
+}
+
+.prvni {
+    color: cornsilk;
+    text-decoration: underline;
+}
+p {
+    font-size: 25px;
+}
+
+.prvni_obrazek  {
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+}
+.druhy_obrazek {
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+}
+.treti_obrazek{
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+}
+
+.konicky1 {
+    text-align: center;
+    color:  cornsilk;
+}
+.konicky2 {
+    text-align: center;
+    color: cornsilk;
+}
+
+.konicky3 {
+    text-align: center;
+    color: cornsilk
+}
+.ja{
+    position: absolute;
+    top:10%;
+    left: 1px;
+    z-index: -1;
+    width: 1600px;
+}
+.tlacitko1 {
+    background-color: blueviolet;
+    color: cornsilk;
+    font-size: 20px;
+}
