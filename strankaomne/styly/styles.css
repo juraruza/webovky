@@ -1,0 +1,77 @@
+body {
+    background-color: blueviolet;
+      
+}
+h1 {
+    border: solid 15px;
+    text-align: center;
+    border-color: aqua;
+    color: black;
+}
+
+.prvni {
+    color: cornsilk;
+    
+}
+.jmeno{
+    font-size: 25px;
+    color: black;
+
+}
+
+.prvni_obrazek  {
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+}
+.druhy_obrazek {
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+}
+.treti_obrazek{
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+}
+
+.konicky1 {
+    text-align: center;
+    color:  cornsilk;
+    font-size: 30px;
+}
+.konicky2 {
+    text-align: center;
+    color: cornsilk;
+    font-size: 30px;
+}
+
+.konicky3 {
+    text-align: center;
+    color: cornsilk;
+    font-size: 30px;
+}
+.ja{
+    position: absolute;
+    top:10%;
+    left: 1px;
+    z-index: -1;
+    width: 1600px;
+}
+button {
+    background-color: blueviolet;
+    color: cornsilk;
+    font-size: 20px;
+}
+.zajimavosti{
+    text-align: center;
+    color: cornsilk
+}
+.easter_egg{
+    color: inherit;
+    
+}
+p{
+    color: darkblue;
+    font-size: 25px;
+}
