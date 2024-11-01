@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+  }
+  
+  .card-container {
+    width: 300px;
+    height: 180px;
+    perspective: 1000px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .card-container:hover .card {
+    transform: rotateY(180deg);
+  }
+  
+  .card-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .front {
+    background-color: #444;
+    color: white;
+  }
+  
+  .back {
+    background-color: #663399; 
+    transform: rotateY(180deg);
+  }
+  
+  
+  .contact-info {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  
