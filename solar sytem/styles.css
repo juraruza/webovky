@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  
+}
+
+.solar-system {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+
+.slunce {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: yellow;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 50px yellow;
+  animation: pulse 2s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 50px yellow;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 0 50px yellow;
+  }
+}
+
+.merkur, .venuse, .zeme, .mesic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, black);
+}
+
+
+.merkur {
+  width: 10px;
+  height: 10px;
+  background-color: darkgray;
+  animation: orbit-merkur 4s linear infinite;
+}
+
+.venuse {
+  width: 15px;
+  height: 15px;
+  background-color: orange;
+  animation: orbit-venuse 6s linear infinite;
+}
+
+.zeme {
+  width: 18px;
+  height: 18px;
+  background-color: blue;
+  animation: orbit-zeme 8s linear infinite;
+
+}
+.mesic {
+  width: 6px;
+  height: 6px;
+  background-color: lightgray;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit-mesic 2s linear infinite;
+  }
+
+
+@keyframes orbit-merkur {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-venuse {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-zeme {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-mesic {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(25px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(25px) rotate(-360deg);
+  }
+}
